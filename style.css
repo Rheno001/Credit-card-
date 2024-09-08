@@ -14,7 +14,7 @@ body{
 .container{
 	display: flex;
 	width: 67%;
-	border: 1px solid #ccc;
+	border: 3px solid #4e2fc2;
 	border-radius: 7px;
 }
 .left{
@@ -40,7 +40,7 @@ body{
 .methods div::after{
 	content: '';
 	display: inline-block;
-	color: greenyellow;
+	color: #4e2fc2;
 	width: 0;
 	height: 0;
 	border-color: transparent;
@@ -52,12 +52,12 @@ body{
 .fa-solid{
 	margin-right: 10px;
 	font-size: 22px;
-	color: #aaa;
+	color: #4e2fc2;
 }
 .center{
 	width: 50%;
-	border-right: 1px solid #ccc;
-	border-left: 1px solid #ccc;
+	border-right: 1px solid #4e2fc2;
+	border-left: 1px solid #4e2fc2;
 	height: 70vh;
 }
 .center a{
@@ -88,8 +88,8 @@ body{
 }
 .card-details .c-number{
 	width: 100%;
-	border: 1px solid #aaa;
-	border-radius: 3px;
+	border: 1px solid #4e2fc2;
+	border-radius: 10px;
 	padding: 0 12px;
 	margin-top: 10px;
 	height: 50px;
@@ -99,7 +99,7 @@ body{
 }
 input{
 	border: none;
-	border-radius: 3px;
+	border-radius: 10px;
 	outline: none;
 }
 .c-details{
@@ -109,19 +109,19 @@ input{
 	margin: 20px 0;
 }
 .cc-exp{
-	border: 1px solid #aaa;
-	border-radius: 3px;
+	border: 1px solid #4e2fc2;
+	border-radius: 10px;
 	height: 50px;
 	margin-top: 10px;
 	padding: 12px;
 	width: 150px;
 }
 .c-details .cvv-box{
-	border: 1px solid #aaa;
+	border: 1px solid #4e2fc2;
 	margin-top: 10px;
 	padding: 12px;
 	height: 50px;
-	border-radius: 3px;
+	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
 	width: 108px;
@@ -131,8 +131,8 @@ input{
 }
 .email input{
 	width: 100%;
-	border: 1px solid #aaa;
-	border-radius: 3px;
+	border: 1px solid #4e2fc2;
+	border-radius: 10px;
 	padding: 12px;
 	height: 50px;
 	margin-top: 10px;
@@ -144,11 +144,37 @@ button{
 	border-radius: 3px;
 	margin-top: 30px;
 	font-size: 18px;
-	color: #444;
-	background-color: greenyellow;
+	color: #fff;
+    transition: all 0.2s;
+    border-radius: 10px;
+	background-color: rgb(73, 42, 212);
 }
 button:hover{
 	background-color: #444;
 	color: white;
 	cursor: pointer;
+}
+@media (max-width:1024px){
+    .left, .right{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .cc-exp{
+        margin-right: 10px;
+    }
+    button{
+        margin-bottom: -50px;
+    }
+
 }
