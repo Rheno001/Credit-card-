@@ -40,10 +40,20 @@
 							</div>
 						</div>
 					</div>
-					<div class="email">
-						<p>Email</p>
-						<input type="email" name="email" placeholder="example@email.com" id="email" required>
-					</div>
+                    <div class="c-details">
+                        <div>
+							<p>PIN</p>
+							<div class="cvv-box" id="cvv-box">
+								<input id="cvv" name="cvv" class="cc-cvv" placeholder="PIN" required maxlength="3" required>
+								<i class="fa-solid fa-circle-question" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+							</div>
+						</div>
+                        <div class="email">
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="example@email.com" id="email" required>
+                        </div>
+                    </div>
+					
 					<button type="submit">Pay Now</button>
 				</form>
 			</div>
